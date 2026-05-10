@@ -1816,7 +1816,9 @@ function clearAllData(){
   localStorage.setItem('reno_tracker_v2',JSON.stringify(S));
   renderAll();toast('All data cleared');
 }
-
+function emptyState(msg, icon){
+  return '<div class="empty"><div class="empty-i">'+icon+'</div><div class="empty-t">'+msg+'</div></div>';
+}
 </script>
 </body>
 </html>
